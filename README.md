@@ -27,6 +27,12 @@ uploader.UploadImage(@"fullPathToImage", "Caption and Hashtags", cropImage, crop
 cropImage and cropWithBorder are optional, cropping an image will turn it into a perfect square, cropping with a border will maintain the images aspect ratio by putting a border around the image. If an image fails to upload, it may be because its dimensions are incorrect for Instagram and you might need to crop. 
 
 
+To post base64 image call the function
+```csharp
+uploader.UploadBase64Image(base64ImageStr, "Caption and Hashtags");
+```
+
+
 All calls are made over HTTPs to Instagram.
 
 You can handle all your events using the following code
